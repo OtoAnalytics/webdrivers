@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_development_dependency 'ffi', '~> 1.0' # For selenium-webdriver on Windows
+  s.add_development_dependency 'irb'
   s.add_development_dependency 'rake', '~> 12.0'
   s.add_development_dependency 'rspec', '~> 3.0'
   s.add_development_dependency 'rubocop', '~>0.66'
@@ -29,5 +30,5 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'nokogiri', '~> 1.6'
   s.add_runtime_dependency 'rubyzip', '~> 1.0'
-  s.add_runtime_dependency 'selenium-webdriver', '~> 3.0'
+  s.add_runtime_dependency 'selenium-webdriver', '>= 3.0', '< 4.1'
 end
